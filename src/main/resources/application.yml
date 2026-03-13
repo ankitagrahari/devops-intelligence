@@ -1,0 +1,24 @@
+spring:
+  main:
+    web-application-type: none
+    banner-mode: "off"
+#    log-startup-info: false
+  application:
+    name: devops-intelligence-mcp
+  ai:
+    mcp:
+      server:
+        name: devops-intelligence
+        version: 1.0.0
+#        type: SYNC
+#        protocol: STDIO
+        stdio: true
+
+logging:
+  level:
+    root: INFO
+  file:
+    name: mcp-server.log
+
+server:
+  port: 8080
